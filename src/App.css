@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+}
+
+body{
+  overflow: hidden;
+  min-height: 100vh;
+}
+.container{
+  width: 100%;
+  background-color: white;
+}
+nav{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 60px;
+
+
+}
+
+.logo{
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  color: #3d535f;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+b{
+  font-size: 70px;
+  color: #7f00ff
+}
+.navitems{
+  display: flex;
+}
+
+.navitems li{
+  list-style: none;
+  margin:0 15px;
+}
+
+.navitems li a{
+font-size:25px;
+color: #3d535f;
+letter-spacing:3px;
+text-decoration: none;
+text-transform:capitalize;
+}
+
+
+.navitems li:hover a ,
+.link a:hover{
+  color: #7f00ff
+}
+
+.links a{
+font-size:30px;
+color: #3d535f;
+margin: 25px 10px;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 15% auto;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  overflow: hidden;
+}
+.wrapper::before{
+position:absolute;
+content: "";
+height: 600px;
+width: 600px;
+border-radius: 100%;
+background:linear-gradient(45deg,#7f00ff,pink) ;
+animation: object1 6s linear infinite;
+left: -12%;
+top: 40%;
+}
+.wrapper::after{
+position:absolute;
+content: "";
+height: 200px;
+width: 200px;
+border-radius: 100%;
+background:linear-gradient(45deg,#7f00ff,pink) ;
+animation: object1 6s linear infinite;
+left: 55%;
+top: 12%;
+}
+
+.cols0{
+  z-index: 5;
+}
+
+.cols{
+  
+  width: 50%;
+}
+
+.topline{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+
+}
+.topline::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color:#7f00ff ;
+}
+h1{
+  display:block;
+  font-size:5em;
+  font-weight: 900;
+  color: #3d535f;
+}
+.mutline{
+  color: #7f00ff;
+  text-transform: capitalize;
+}
+p{
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+  color: #3d535f;
+}
